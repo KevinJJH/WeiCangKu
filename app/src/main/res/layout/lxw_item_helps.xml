@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lxw_id_item_helps_include_avertor"
+            layout="@layout/lxw_include_avertor" />
+
+        <TextView
+            android:id="@+id/lxw_id_item_helps_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:padding="16dp"
+            android:text="我是甩甩，这是内容好不好好啊？我要发大招拉。哈哈哈哈,真的是醉了哈."
+            android:textColor="#232323"
+            android:textSize="14sp" />
+
+        <include
+            android:id="@+id/lxw_id_item_helps_include_img"
+            layout="@layout/lxw_item_helps_image" />
+
+   <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp" >
+
+    <com.weicangku.com.weicang.Util.circle.WrapGridViews
+
+            android:id="@+id/lxw_id_item_helps_gridview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="2dp"
+
+            android:scrollbars="none"
+            android:focusable="false"
+           ></com.weicangku.com.weicang.Util.circle.WrapGridViews>
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
+        <Button
+            android:layout_width="53dp"
+            android:layout_height="33dp"
+            android:text="删除"
+            android:id="@+id/delete_comment"
+            android:textSize="11dp"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"
+          />
+
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="@drawable/coment_pressed"
+            android:visibility="gone"
+            />
+
+
+        <!--   <com.weicangku.com.weicang.Util.circle.MyListView
+            android:id="@+id/lxw_id_helps_comment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+
+            ></com.weicangku.com.weicang.Util.circle.MyListView>-->
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

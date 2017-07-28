@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/include_navi"/>
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/main_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:wave_color="#90ffffff"
+        app:isLoadMore="true"
+        app:overlay="true"
+        app:wave_show="true"
+        android:layout_weight="1">
+        <GridView
+            android:id="@+id/act_goods_result_gv"
+            android:layout_width="match_parent"
+            android:numColumns="2"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="4dp"
+            android:scrollbars="none"
+            android:focusable="false"
+            android:verticalSpacing="4dp"
+            android:gravity="center"
+            >
+
+        </GridView>
+
+    </com.cjj.MaterialRefreshLayout>
+    <Button
+        android:id="@+id/push_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布商品"/>
+</LinearLayout>

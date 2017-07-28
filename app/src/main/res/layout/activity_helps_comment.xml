@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include android:id="@+id/ll" layout="@layout/include_navi"/>
+
+    <ListView
+        android:id="@+id/lxw_id_helps_comment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/abc_list_divider_mtrl_alpha"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        ></ListView>
+    <LinearLayout
+
+        android:id="@+id/ll_huifu"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+
+            android:id="@+id/et1"
+            android:background="@android:drawable/edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="说点什么..."
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.HomeActivity"
+    tools:showIn="@layout/app_bar_main">
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        >
+
+        <ImageView
+            android:id="@+id/friendcir_bg"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/friend_bg" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avator"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/default_icon"
+            />
+
+    </RelativeLayout>-->
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/main_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:wave_color="#90ffffff"
+        app:isLoadMore="true"
+        app:overlay="true"
+        app:wave_show="true">
+        <ListView
+            android:id="@+id/main_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:scrollbars="none"
+            android:divider="@null"
+            ></ListView>
+    </com.cjj.MaterialRefreshLayout>
+</RelativeLayout>

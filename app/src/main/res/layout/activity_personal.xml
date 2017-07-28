@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ll"
+        layout="@layout/include_navi" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll" >
+
+        <ImageView
+            android:id="@+id/personal_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-100dp"
+            />
+
+        <com.weicangku.com.weicang.Util.CustomScrollView1
+            android:id="@+id/personal_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <LinearLayout
+                style="@style/PersonalMainLayoutStyle"
+                android:layout_below="@+id/common_actionbar" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_head"
+                    style="@style/PersonalBottomStyle"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/set_nick"
+                        style="@style/PersonalTextStyle"
+                        android:text="头像"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_expend_right" />
+
+                    <ImageView
+                        android:id="@+id/set_touxiang"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                       android:layout_marginBottom="20dp"
+                        android:paddingLeft="10dp"
+
+                        android:src="@drawable/ic_launcher"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imageView1"
+                        android:layout_toStartOf="@+id/imageView1" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/update_name"
+                    style="@style/PersonalBottomStyle"
+                    android:layout_margin="0dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:text="名字"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/set_name"
+                        style="@style/PersonalTextStyle"
+                        android:layout_toLeftOf="@+id/IV_1"
+                        android:text="jhhh"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/IV_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_expend_right" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+                <RelativeLayout
+                    android:id="@+id/update_personal_sign"
+                    style="@style/PersonalBottomStyle"
+                    android:layout_margin="0dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:text="个性签名"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/set_sign"
+                        style="@style/PersonalTextStyle"
+                        android:layout_width="160dp"
+                        android:gravity="right"
+                        android:layout_toLeftOf="@+id/IV_3"
+                        android:text="jhhh"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/IV_3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_expend_right" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <RelativeLayout
+                    android:id="@+id/Rl_gender"
+                    style="@style/PersonalBottomStyle"
+                    android:layout_margin="0dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:text="性别"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/set_gender"
+                        style="@style/PersonalTextStyle"
+                        android:layout_toLeftOf="@+id/IV_2"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/IV_2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_expend_right" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <RelativeLayout style="@style/PersonalBottomStyle"
+                    android:layout_margin="0dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:text="微仓号"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        style="@style/PersonalTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <RelativeLayout
+                    android:id="@+id/Rl_myaddress"
+                    style="@style/PersonalBottomStyle"
+                    android:layout_margin="0dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:text="我的收货地址"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_expend_right" />
+                </RelativeLayout>
+                <View style="@style/PersonalLine" />
+
+                <RelativeLayout
+                    android:id="@+id/Rl_account"
+                    style="@style/PersonalBottomStyle"
+                    android:layout_margin="0dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:text="账号与安全"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_expend_right" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+            </LinearLayout>
+        </com.weicangku.com.weicang.Util.CustomScrollView1>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include android:id="@+id/ll" layout="@layout/include_navi"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:background="@color/white">
+
+
+        <com.weicangku.com.weicang.Util.ClearEditText
+            android:id="@+id/et_msg_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/base_edit_input"
+            android:drawableLeft="@drawable/icon_msg_search"
+
+            android:drawablePadding="10dp"
+            android:hint="搜索"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_centerVertical="true">
+
+        </com.weicangku.com.weicang.Util.ClearEditText>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/aitewode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" @我的"
+        android:gravity="left|center"/>
+
+    <Button
+        android:id="@+id/PingLun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 评论"
+        android:gravity="left|center"
+
+        />
+
+    <Button
+        android:id="@+id/Zan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 赞"
+        android:gravity="left|center"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sw_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><!--查询结果展示的item的布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/act_goods_result_gv_item_iv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/github"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/id_lxw_item_chose_img_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@drawable/picture_unselected" />
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/act_goods_result_gv_item_tv_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="冬季加绒保暖内衣"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/act_goods_result_gv_item_tv_money"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="¥ 59.00"
+        android:textColor="#FF7932" />
+</LinearLayout>

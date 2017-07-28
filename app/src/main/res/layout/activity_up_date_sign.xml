@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <include
+        layout="@layout/include_navi" />
+
+    <LinearLayout
+        style="@style/PersonalBottomStyle">
+
+        <TextView
+            android:id="@+id/Tv_3"
+            style="@style/PersonalTextStyle"
+            android:text="个性签名"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/Et_sign"
+            style="@style/PersonalTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>

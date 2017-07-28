@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <include android:id="@+id/ll" layout="@layout/include_navi"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"
+        >
+
+        <ImageView
+            android:id="@+id/personal_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-100dp" />
+
+        <com.weicangku.com.weicang.Util.CustomScrollView1
+            android:id="@+id/personal_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/common_actionbar"
+                android:background="@color/transparent"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_head"
+                    style="@style/PersonalBottomStyle"
+                    android:layout_height="80dp" >
+
+                    <ImageView
+                        android:id="@+id/set_avator"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/set_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/set_avator"
+                        android:paddingTop="20dp"
+                        android:text="名字"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="25dp"
+                        android:text="账户管理"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_expend_right" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/set_nick"
+                        android:layout_below="@+id/set_nick"
+                        android:paddingTop="5dp"
+                        android:text="微仓号:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/set_weicanghao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="aaaaaa"
+                        android:textColor="@color/black"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:layout_toEndOf="@+id/textView1" />
+                </RelativeLayout>
+
+                <LinearLayout style="@style/PersonalBottomStyle" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="我的订单"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="查看全部订单" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/arrow_expend_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/PersonalBottomStyle"
+                    android:paddingTop="5dp" >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/user_3"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:focusable="false"
+                        android:scaleType="centerInside" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/user_4"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:focusable="false"
+                        android:scaleType="centerInside" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/user_5"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:focusable="false"
+                        android:scaleType="centerInside" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/user_6"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:focusable="false"
+                        android:scaleType="centerInside" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/user_7"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:focusable="false"
+                        android:scaleType="centerInside" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="35dp"
+                        android:text="商品关注"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="50dp"
+                        android:text="仓库关注"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="60dp"
+                        android:text="优惠券"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="37dp"
+                    android:text="购物车"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </com.weicangku.com.weicang.Util.CustomScrollView1>
+
+    </RelativeLayout>
+</RelativeLayout>

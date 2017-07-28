@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal">
+
+
+        <com.weicangku.com.weicang.Util.ChangeColorIconWithText
+            android:id="@+id/indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:color="#ff45c01a"
+            hyman:icon="@drawable/ic_menu_emoticons"
+            hyman:text="首页"
+            hyman:text_size="12sp" />
+
+        <com.weicangku.com.weicang.Util.ChangeColorIconWithText
+            android:id="@+id/indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:color="#ff45c01a"
+            hyman:icon="@drawable/tab_message"
+            hyman:text="消息"
+            hyman:text_size="12sp"/>
+        <ImageView
+            android:id="@+id/iv_contact_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/msg_tips"
+            android:contentDescription="Setting"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+
+        <com.weicangku.com.weicang.Util.ChangeColorIconWithText
+            android:id="@+id/indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:color="#ff45c01a"
+            hyman:icon="@drawable/menu_group"
+            hyman:text="动态"
+            hyman:text_size="12sp"
+            />
+
+
+        <com.weicangku.com.weicang.Util.ChangeColorIconWithText
+            android:id="@+id/indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:color="#ff45c01a"
+            hyman:icon="@drawable/tab_find"
+            hyman:text="仓库"
+            hyman:text_size="12sp" />
+        <ImageView
+            android:id="@+id/iv_contact_tips2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/msg_tips"
+            android:contentDescription="Setting"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <com.weicangku.com.weicang.Util.ChangeColorIconWithText
+            android:id="@+id/indicator_five"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:color="#ff45c01a"
+            hyman:icon="@drawable/tab_mine"
+            hyman:text="我的"
+            hyman:text_size="12sp" />
+    </LinearLayout>
+</LinearLayout>

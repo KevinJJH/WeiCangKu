@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include android:id="@+id/ll" layout="@layout/include_navi"/>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/my_personal_not_login_bg"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/User_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"/>
+
+    <TextView
+        android:id="@+id/Tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdds"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/User_avatar"
+        android:layout_toRightOf="@+id/User_avatar"
+        android:layout_marginLeft="10dp"/>
+
+   <!-- <TextView
+        android:id="@+id/Tv_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总浏览量:"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+
+   />
+    <TextView
+        android:id="@+id/Tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="97"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:id="@+id/Tv_FangKe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日访客:"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_above="@+id/Tv_Total"
+        />
+    <TextView
+        android:id="@+id/Tv_fangke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_above="@+id/Tv_number"
+
+        />-->
+
+</RelativeLayout>
+
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/main_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:wave_color="#90ffffff"
+        app:isLoadMore="true"
+        app:overlay="true"
+        app:wave_show="true"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/main_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:scrollbars="none"
+            android:divider="@drawable/abc_list_divider_mtrl_alpha"
+            >
+        </ListView>
+
+
+    </com.cjj.MaterialRefreshLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_huifu"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+
+            android:id="@+id/et1"
+            android:background="@android:drawable/edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="说点什么..."
+            android:textColorHint="#fff" />
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include android:id="@+id/ll" layout="@layout/include_navi"/>
+
+    <EditText
+        android:id="@+id/good_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请填写商品标题,最多15字"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:maxLength="15"
+        android:paddingLeft="10dp"
+       android:background="@drawable/drawable_edit_normal"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"
+
+        android:background="#dadada" >
+    </View>
+    <EditText
+        android:id="@+id/good_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="请填写商品描述"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/drawable_edit_normal"
+        android:gravity="top|left"
+        android:paddingLeft="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"
+
+        android:background="#dadada" >
+    </View>
+    <EditText
+        android:id="@+id/good_price"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请填写价格"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:paddingLeft="10dp"
+        android:background="@drawable/drawable_edit_normal"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"
+
+        android:background="#dadada" >
+    </View>
+
+    <com.weicangku.com.weicang.Util.view.CustomEditText
+        android:id="@+id/good_stock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请填写库存"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:paddingLeft="50dp"
+        android:paddingBottom="5dp"
+        android:inputType="number"
+        android:background="@drawable/drawable_edit_normal"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"
+
+        android:background="#dadada" >
+    </View>
+    <ImageView
+    android:id="@+id/pick_photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher"
+    android:layout_gravity="center"/>
+
+    <HorizontalScrollView
+        android:id="@+id/id_lxw_push_scrollPicContent"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/id_lxw_push_layPicContent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
